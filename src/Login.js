@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { GoogleLogin } from 'react-google-login';
 // refresh token
-import { refreshTokenSetup } from '../utils/refreshToken';
+import { refreshTokenSetup } from './refreshToken';
 
 const clientId = '357512393104-vub6iq2i0jfssetegu41d9rkktgjtdk2.apps.googleusercontent.com' //insert client id here
 
@@ -12,7 +12,7 @@ function Login(props) {
 
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
-    props.onSuccess(res.profileObj);
+    // props.onSuccess(res.profileObj);
     refreshTokenSetup(res);
     props.setLoggedIn(true);
     props.setName(res.profileObj.name)
