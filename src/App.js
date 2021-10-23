@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class="topleft">yam
+        <div class="topleft">
+        <font face = "keepOnTruckin" size = "5">yam
+        </font> 
         </div>
       </header>
       <Stickies/>
