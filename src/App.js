@@ -10,12 +10,11 @@ function App() {
         </div>
       </header>
     </div>
+    @font-face {
+      font-family: keepOnTruckin;
+      src: url(//db.onlinewebfonts.com/c/49fafb302421193937187e7f6957d03b?family=Keep+on+Truckin'FW);
+    }
   );
-}
-
-@font-face {
-  font-family: keepOnTruckin;
-  src: @import url(//db.onlinewebfonts.com/c/49fafb302421193937187e7f6957d03b?family=Keep+on+Truckin'FW);
 }
 
 export default App;
